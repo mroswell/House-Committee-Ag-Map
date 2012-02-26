@@ -1,0 +1,89 @@
+{
+  "bounds": [
+    -131.3965,
+    19.4769,
+    -57.7442,
+    52.4828
+  ],
+  "center": [
+    -95.8887,
+    40.5138,
+    3
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "HouseAg3",
+    "template_teaser": "<b>{{{NAME}}}</b>\n<br>Congressional District:  {{{ST_ABBREV}}}-{{{CD}}}\n<br>First took office in {{{First took}}}<br> {{{DC_Office}}} <br>{{{DC_Voice}}} • {{{District_V}}} \n<br>[Click district for links]\n",
+    "template_full": "<b>{{{NAME}}}</b>\n<br>Congressional District:  {{{ST_ABBREV}}}-{{{CD}}}\n<br>First took office in {{{First took}}}<br> {{{DC_Office}}} <br>{{{DC_Voice}}} • {{{District_V}}}  • <a href=\"{{{email}}}\">Contact Form</a><br><a href=\"{{{URL}}}\" target=\"_blank\">Website</a> • <a href=\"{{{Wikipedia}}}\" target=\"_blank\">Wikipedia</a> • <a href=\"{{{Facebook}}}\" target=\"_blank\">Facebook</a> • <a href=\"{{{Twitter}}}\" target=\"_blank\">Twitter</a> <br><a href=\"http://www.agcensus.usda.gov/Publications/2007/Online_Highlights/Congressional_District_Profiles{{{2007census}}}\" target=\"_blank\">2007 Agriculture Census</a> • <a href=\"http://influenceexplorer.com/politician/{{{Influence}}}\" target=\"_blank\">Influence Explorer</a>   <br> <a href=\"{{{EWGSubsidy}}}\" target=\"_blank\">EWG Subsidy Database</a> • <a href=\"{{{OpenSecret}}}\" target=\"_blank\">Open Secrets</a> \n\n<br>Committees:\n<ul style=\"margin:0; padding:0 0 0 -1.5em;\">\n{{#ConEnFor}}\n<li style=\"list-style:square outside; margin:0 0 0 -1.5;\">Conservation, Energy, and Forestry</li>\n{{/ConEnFor}}\n\n{{#Commoditie}}\n<li style=\"list-style:square outside; margin:0 0 0 -1.5;\">General Farm Commodities and Risk Mgmt</li>\n{{/Commoditie}}</li>\n\n{{#Operations}}\n<li style=\"list-style:square outside; margin:0 0 0 -1.5;\">Department Operations, Oversight, and Credit</li>\n{{/Operations}}\n\n {{#Livestock}}\n<li style=\"list-style:square outside; margin:0 0 0 -1.5;\">Livestock, Dairy and Poultry</li>\n {{/Livestock}}\n\n{{#Horticultu}}\n<li style=\"list-style:square outside; margin:0 0 0 -1.5;\">Nutrition and Horticulture</li>\n{{/Horticultu}}\n\n{{#RuralDev}}\n<li style=\"list-style:square outside; margin:0 0 0 -1.5;\">Rural Development, Research, Biotechnology, and Foreign Agriculture</li>\n{{/RuralDev}} \n</ul>\n",
+    "template_location": "",
+    "fields": [
+      "NAME",
+      "ST_ABBREV",
+      "CD",
+      "First took",
+      "DC_Office",
+      "DC_Voice",
+      "District_V",
+      "email",
+      "URL",
+      "Wikipedia",
+      "Facebook",
+      "Twitter",
+      "Influence",
+      "EWGSubsidy",
+      "OpenSecret",
+      "ConEnFor",
+      "Commoditie",
+      "Operations",
+      "Livestock",
+      "RuralDev",
+      "Horticultu"
+    ]
+  },
+  "minzoom": 3,
+  "maxzoom": 8,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "id": "countries",
+      "name": "countries",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "geometry": "polygon",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.3.0/cultural/10m-admin-0-countries.zip",
+        "type": "shape",
+        "id": "countries",
+        "project": "HouseAgCommittee",
+        "srs": null
+      }
+    },
+    {
+      "geometry": "polygon",
+      "name": "states-kml",
+      "id": "states-kml",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/marjorieroswell/advocacy/maps/21424.kml"
+      }
+    },
+    {
+      "geometry": "polygon",
+      "id": "HouseAg3",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/marjorieroswell/advocacy/FarmBill/HouseAgCommittee2.6.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "name": "HouseAg3"
+    }
+  ],
+  "name": "House Committee on Agriculture",
+  "description": "",
+  "attribution": "Marjorie Roswell and Daniel Bowman Simon",
+  "legend": ""
+}
